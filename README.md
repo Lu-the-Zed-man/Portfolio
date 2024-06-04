@@ -16,7 +16,7 @@ This is sample of my personal portfolio website showcasing my projects and skill
 •	SQLite: Database used to store and retrieve messages from the contact form.
 
 3.	Installation
-•	Clone the repository: Run the command “git clone https://github.com/Lu-the-Zed-man/portfolio.git” to clone the repo.
+•	Clone the repository: Run the command “git clone https://github.com/Lu-the-Zed-man/Portfolio.git” to clone the repo.
 •	Install dependencies: Run the command “npm install” to install the required dependencies.
 •	Start the server: Run the command “node server.js” to start the server.
 •	Open your web browser and navigate to http://localhost:3002 to access the site.
