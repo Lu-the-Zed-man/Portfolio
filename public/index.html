@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title of the webpage-->
+    <title>My Techfolio</title>
+
+    <!--The favicon of the webpage-->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!--Linking the stylesheet with this html file-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Loading the font awesome library for the icons used in the webpage-->
+    <script src="https://kit.fontawesome.com/2b717e0e76.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!----------Header section------------>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!--Logo image-->
+                <img src="images/Logo.png" alt="logo" class="logo">
+
+                <!--Navigation menu-->
+                <ul id="sidemenu">
+                    <!--Navigation links-->
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <!--Close mennu icon-->
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <!--Open menu icon-->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <!--Header text content-->
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hello there, I'm <span>Luyando</span><br> Also known as the Zedman.</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------About section----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <!--Column for the profie image-->
+                <div class="about-col-1">
+                    <img src="images/users.png" alt="myself" >
+                </div>
+
+                <!--Column for the about text and tabs-->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a diligent student of Computer Science at the esteemed University of Zambia. Currently in my fourth year of studies specializing in Software Engineering.
+                        Fueled by a deep-seated passion for leveraging technological solutions to address real-world challenges, I am committed to refining my skills and embracing new opportunities within the dynamic realm of technology.
+                        Throughout my journey, I have developed proficiency in a diverse range of programming languages, frameworks, and tools, which are mentioned in the skills section. Additionally, I possess hands-on experience in software development and agile methodologies.
+                        Furthermore, my interests extend beyond the realm of software engineering. I am passionate about exploring the intersection of technology with other disciplines, such as artificial intelligence, data science, and cybersecurity. I believe in the transformative power of technology to drive positive change and enhance the human experience.
+                    </p>
+
+                    <!--Tab for titles switching between content sections-->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    </div>
+
+                    <!--Tab content for skills-->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>General building of systems.</li>
+                            <li><span>Python Django</span><br>Building of systems using the said langauge.</li>
+                            <li><span>JavaScript</span><br>Basic functionality/responsiveness of websites.</li>
+                            <li><span>HTML & CSS</span><br>General structuring and styling of websites.</li>
+                            <li><span>Networks</span><br>Configure switches and end devices to provide access to local and remote network resources as well as Configure routers to enable end-to-end connectivity between remote devices..</li>
+                        </ul>
+                    </div>
+
+                    <!--Tab content for experience-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Developer at MEL</li>
+                            <li><span>2024 - Current</span><br>Internship at GT</li>
+                            <li><span>2023 - 2024</span><br>Internship at AFL.</li>
+                        </ul>
+                    </div>
+
+                    <!--Tab content for education-->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Bachelor's Degree - The University of Zambia.</li>
+                            <li><span>2019</span><br>Grade 12 Certificate - Holy Cross Convent School.</li>
+                            <li><span>2016</span><br>Grade 9 Certificate - Holy Cross Convent School</li>
+                            <li><span>2014</span><br>Grade 7 Certificate - Rock of Ages School.</li>
+
+                        </ul>
+                    </div>
+
+                    <!--Tab content for certificates-->
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span>ZICTA Cybersecurity</span><br>Completed.</li>
+                            <li><span>Networks</span><br>Completed.</li>
+                            <li><span>IT Esentials</span><br>Completed.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------Services Section------------>
+    <div id="services">
+        <div class="container">
+
+            <!--Subtitle for the services section-->
+            <h1 class="sub-title">My Services</h1>
+
+            <!--List of services offered-->
+            <div class="services-list">
+
+                <div>
+                    <!--Web development icon with the respective title and description-->
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Creating websites and web applications for the internet. Coding and programming to build the functionality and features of a website or web application.</p>
+                    <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <!--Web design icon with the respective title and description-->
+                    <i class="fa-brands fa-dev"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating the visual and functional aspects of websites. Planning, conceptualizing, and arranging content and elements to create a cohesive and engaging experience for users.</p>
+                    <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <!--App develpment icon with the respective title and description-->
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Creating software applications that run on mobile devices such as smartphones and tablets, or on desktops. Designing, coding, testing, and deploying applications.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-----------------Work Section----------------->
+    <div id="work">
+        <div class="container">
+
+            <!--Sub title for work section-->
+            <h1 class="sub-title">My Work</h1>
+
+            <!--List of worked on projects-->
+            <div class="work-list">
+
+                <div class="work">
+                    <!--Image for the project-->
+                    <img src="images/work-1.jpg" alt="work-1">
+
+                    <!--Layer containing project details, the title, description and link to the repo-->
+                    <div class="layer">
+                        <h3>Student Application system</h3>
+                        <p>An integrated student application system developed to revolutionize the admissions process within educational institution. This comprehensive system aims to streamline and automate various stages of the application lifecycle, from initial submission to final decision.</p>
+                        <a href="https://github.com/Lu-the-Zed-man/Student-application-system"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <!--Image for the project-->
+                    <img src="images/work-2.jpg" alt="work-2">
+
+                    <!--Layer containing project details, the title, description and link to the project repo-->
+                    <div class="layer">
+                        <h3>Lorem Ipsum Page</h3>
+                        <p>A design and development aid, the Lorem Ipsum Page serves as a placeholder for content during website creation. Lorem Ipsum text, a standard dummy text, providing a realistic visual representation without distracting from the layout and design.</p>
+                        <a href="https://github.com/Lu-the-Zed-man/Lorem-Ipsum"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <!--Image for the project-->
+                    <img src="images/work-3.jpg" alt="work-3">
+
+                    <!--Layer containing project details, the title, description and link to the repo-->
+                    <div class="layer">
+                        <h3>Word Count Tool</h3>
+                        <p>A word count tool designed to provide a quick and efficient way to determine the number of words in a given text input. This lightweight and user-friendly application allows users to enter a sentence or paragraph and instantly receive a word count.</p>
+                        <a href="https://github.com/Lu-the-Zed-man/Word-Count"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--Link to see more projects-->
+            <a href="https://github.com/Lu-the-Zed-man?tab=repositories" class="btn">See More</a>
+        </div>
+    </div>
+
+    
+    <!--------------- Contact information section --------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <!--Left column for the contact details and social links-->
+                <div class="contact-left">
+
+                    <!--Sub title for the contact section-->
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> pongolaniluyando10@gmail.com</p><!--Email contact information-->
+                    
+                    <!--Social media icons with links-->
+                    <div class="social-icons">
+                        <a href="https://github.com/Lu-the-Zed-man"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://zm.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/?lang=en"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+
+                    <!--Link to download cv-->
+                    <a href="images/Report.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <!--Right column for contact form-->
+                <div class="contact-right">
+
+                    <!--Contact form with input fields and a submission button at the end-->
+                    <form id="contactForm" action="/submit-form" method="POST">
+                        <input type="text" name="name" placeholder="Enter your full name" required>
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <textarea name="message" rows="6" placeholder="Enter your message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <!--Display message when form is submitted-->
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--Copy right information-->
+        <div class="copyright">
+            <p>Copyright @ Luyando.</p>
+        </div>
+    </div>
+
+    <!--Script with the added functionality-->
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
