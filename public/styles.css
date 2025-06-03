@@ -85,7 +85,10 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #0059ff;
 }
-
+.header-text p{
+    color: #c98f47;
+    font-size: 60px;
+}
 
 /*About Section*/
 #about{
@@ -336,28 +339,6 @@ nav ul li a:hover::after{
     background: #0059ff;
 }
 
-/* Contact form */
-.contact-right form{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
 /*Copyright*/
 .copyright{
     width: 100%;
@@ -431,9 +412,4 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
-}
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
 }
